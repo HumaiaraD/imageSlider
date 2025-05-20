@@ -1,0 +1,155 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h1{
+    font-family: monospace;
+    font-weight: bolder;
+
+  }
+
+  h1, p {
+    margin: 40px;
+  }
+  h3 {
+    white-space: nowrap;
+    margin: 0;
+  }
+  body > p {
+    text-align: center;
+    width: 74ch;
+    
+    text-wrap: balance;
+    font-family: monospace;
+    margin-bottom: 4rem;
+    line-height: 1.5;
+    opacity: 0.8;
+    font-weight: 400;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+ul li {
+  position: relative;
+  list-style-type: none;
+  display: inline-block; /* or block depending on layout */
+  cursor: pointer;
+  margin: 5px;
+}
+
+ul li img {
+  display: block;
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+ul li h3, ul li a,
+ul li p {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.249);
+  color: white;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: auto;
+  z-index: 2;
+  font-family: monospace;
+}
+
+
+ul li h3 {
+  top: 60px;
+  left: 10px;
+  rotate: 90deg;
+}
+
+ul li p {
+  bottom: 50px;
+  left: 10px;
+  max-width: 80%;
+  display: none;
+}
+ul li a{
+    bottom: 20px;
+    left: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+ul li article {
+    width: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+ul li.expanded article {
+    width: 600px;
+    max-width: 100%;
+}
+ul li.expanded p,
+ul li.expanded a {
+    display: block;
+}
+
+
+
+
+@media (max-width: 768px) {
+        ul li img{
+            width: 300px;
+            height: 200px;
+
+        }
+      ul li article {
+        width: 50px;
+        height: 200px;
+      }
+      ul li.expanded article{
+        width: 300px;
+      }
+      ul li h3 {
+        font-size: 12px;
+        top: 60px;
+        left: -18px;
+        text-align: center;
+      }
+      h1 {
+        margin: auto;
+        margin-top: 80px;
+      }
+      p {
+        margin: auto;
+        margin-top: 30px;
+      }
+    }
+
+
+
+  
+
+  
+  
+
+
+
+ 
