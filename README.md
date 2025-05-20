@@ -17,9 +17,5 @@ This project is crafted to exhibit effective UI design and front-end development
 
 ---
 
-
-
-
-
-https://github.com/user-attachments/assets/9088bcfa-70a1-416d-9377-e47ac69e6968
+https://github.com/user-attachments/assets/61c75c0f-1529-45ac-a343-e4aaaa0eba12
 
